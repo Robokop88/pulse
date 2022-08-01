@@ -347,6 +347,8 @@
         }
 
         &__tabs {
+            width: 95%;
+            margin: 0 auto;
             margin-top: 40px;
         }
 
@@ -358,7 +360,7 @@
         }
 
         &-item {
-            width: 235px;
+            width: 260px;
             margin: 10px 10px;
             &__subtitle {
                 font-size: 15px;
@@ -369,18 +371,18 @@
             }
             &__list {
                 li {
-                    font-size: 12px;
+                    font-size: 13px;
                 }
-
             }
 
             &__footer {
                 .catalog-item__price {
-                    font-size: 15px;
+                    font-size: 16px;
                 }
 
                 .button_mini {
                     width: 105px;
+                    height: 30px;
                 }
             }
         }

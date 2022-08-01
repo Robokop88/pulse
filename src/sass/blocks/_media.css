@@ -254,6 +254,8 @@
     font-size: 20px;
   }
   .catalog__tabs {
+    width: 95%;
+    margin: 0 auto;
     margin-top: 40px;
   }
   .catalog__tab {
@@ -263,7 +265,7 @@
     font-size: 10px;
   }
   .catalog-item {
-    width: 235px;
+    width: 260px;
     margin: 10px 10px;
   }
   .catalog-item__subtitle {
@@ -274,12 +276,13 @@
     font-size: 12px;
   }
   .catalog-item__list li {
-    font-size: 12px;
+    font-size: 13px;
   }
   .catalog-item__footer .catalog-item__price {
-    font-size: 15px;
+    font-size: 16px;
   }
   .catalog-item__footer .button_mini {
     width: 105px;
+    height: 30px;
   }
 }
