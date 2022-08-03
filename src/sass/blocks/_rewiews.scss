@@ -1,3 +1,49 @@
-.rewiews {
+.reviews {
     padding-bottom: 71px;
+    &__wrapper {
+        display: block;
+        margin-top: 72px;
+        width: 884px;
+    }
+
+    &__block {
+        display: flex;
+		justify-content: center;
+		align-items: center;
+       
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #0d0d0d;
+    }
+
+    &__text-light {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #646464;
+    }
+
+    &__text {
+        margin-top: 19px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #0d0d0d;
+    }
+
+    &__img {
+        margin-right: 62px;
+    }
+
+    hr {
+        background-color: black;
+        margin-top: 48px;
+        margin-bottom: 53px;
+        border-bottom: none; 
+    }
 }
