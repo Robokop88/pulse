@@ -9,7 +9,12 @@
     text-transform: uppercase;
     color: #ffffff;
     transition: 0.5s all;
-    @include hover;
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+        border: none;
+    }
+
+    
 
     &_main {
         margin-top: 67px;
@@ -22,7 +27,10 @@
         text-transform: uppercase;
         color: #ffffff;
         transition: 0.5s all;
-        @include hover;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        }    
     }
 
     &_submit {
@@ -34,13 +42,19 @@
         text-transform: uppercase;
         color: #ffffff;
         transition: 0.5s all;
-        @include hover;
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: none;
+        } 
     }
     &_mini {
         width: 131px;
         height: 40px;
-        font-size: 14px;
+        font-size: 14px; 
         transition: 0.5s all;
-        @include hover;
+    }
+    &:hover {
+        box-shadow: 3px 3px 20px $main-color;
+        border: none;
     }
 }
