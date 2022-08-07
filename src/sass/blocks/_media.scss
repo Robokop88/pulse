@@ -260,6 +260,31 @@
             margin: 48px auto 53px auto;
         }    
     }
+
+    .footer {
+        &__info {
+            padding: 15px 15px;
+            width: 290px;
+            height: 200px;
+        }
+        &__addr {
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+        &__phone {
+            font-size: 19px;
+        }
+
+        &__social-item {
+            width: 40px;
+            height: 40px;
+            img {
+                height: 22px;
+            }
+        }
+
+
+    }
 }
 
 @media (max-width: 575px) {
@@ -484,5 +509,11 @@
             width: 275px;
             margin: 48px auto 53px auto;
         }    
+    }
+
+    .footer {
+        &__info {
+            width: 100%
+        }
     }
 }
