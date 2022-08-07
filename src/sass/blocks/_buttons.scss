@@ -9,7 +9,7 @@
     text-transform: uppercase;
     color: #ffffff;
     transition: 0.5s all;
-    @mixin hover;
+    @include hover;
 
     &_main {
         margin-top: 67px;
@@ -22,7 +22,7 @@
         text-transform: uppercase;
         color: #ffffff;
         transition: 0.5s all;
-        @mixin hover;
+        @include hover;
     }
 
     &_submit {
