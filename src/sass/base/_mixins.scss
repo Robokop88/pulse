@@ -1,0 +1,12 @@
+@mixin hover {
+    &:hover {
+		box-shadow: 3px 3px 20px $main-color;
+        border: none;
+    }
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}   
+
+	

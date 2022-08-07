@@ -42,6 +42,11 @@
         border: 2px solid #ffffff;
         border-radius: 100%;
         margin: 0 15px;
+        transition: 0.5s all;
+        &:hover {
+            box-shadow: 3px 3px 20px #fff;
+            
+        }
         img {
             height: 27px;
         }
@@ -52,9 +57,5 @@
         justify-content: center;
         align-items:center;
 
-    }
-
-    .place-card {
-        display: none;
     }
 }
