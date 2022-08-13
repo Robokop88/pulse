@@ -553,4 +553,31 @@
             width: 100%
         }
     }
+
+    .modal {
+        width: 280px;
+        padding: 38px 15px 40px 15px;
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr { 
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        &__close {
+            font-size: 32px;
+            right: -20px;
+            line-height: 16px;
+        }
+        .feed-form {
+            width: 248px;
+            input {
+                height: 40px;
+            }
+            .button {
+                height: 40px;
+                font-size: 15px;
+            }
+        }
+    }
 }
