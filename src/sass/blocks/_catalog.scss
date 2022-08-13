@@ -47,6 +47,7 @@
             display: flex;
         }
     }
+
     &-item {
         overflow: hidden;
         width: 300px;
@@ -90,6 +91,7 @@
                 color: $main-color;
             }  
         }
+
         hr {
             background-color:black;
             margin: 19px 0px;
@@ -127,6 +129,7 @@
                 margin-right: 20px;
             }
         }
+
         &__list {
             position: relative;
             width: 50%;
@@ -158,6 +161,7 @@
                 }
             }
         }
+        
         &__back {
             position: absolute;
             bottom: 0;
