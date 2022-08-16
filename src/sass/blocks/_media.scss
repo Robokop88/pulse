@@ -582,7 +582,8 @@
 
     .modal {
         width: 280px;
-        padding: 38px 15px 40px 15px;
+        min-height: 70%;
+        padding: 25px 15px 30px 15px;
         &__subtitle {
             font-size: 15px;
         }
