@@ -50,7 +50,7 @@ $(document).ready(function(){
     $('.overlay, #consultation').fadeIn('slow');
   });
 
-  $('.modal__close').on('click', function() {
+  $('.modal__close, .overlay').on('click', function() {
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
   });
 
@@ -83,17 +83,17 @@ $(document).ready(function(){
         name: {
           required: "Пожалуйста, введите свое имя",
           minlength: jQuery.validator.format("Минимальное количество символов = {0}"),
-          maxlength: jQuery.validator.format("Минимальное количество символов = {0}")
+          maxlength: jQuery.validator.format("Максиимальное количество символов = {0}")
         },
         phone: {
           required: "Пожалуйста, введите свой номер телефона",
           minlength: jQuery.validator.format("Минимальное количество символов = {0}"),
-          maxlength: jQuery.validator.format("Минимальное количество символов = {0}")
+          maxlength: jQuery.validator.format("Максимальное количество символов = {0}")
         },
         email: {
           required: "Пожалуста введите сою почту",
           email: "Неправильно введен адрес почты",
-          maxlength: jQuery.validator.format("Минимальное количество символов = {0}")
+          maxlength: jQuery.validator.format("Маскимальное количество символов = {0}")
         }
       }
     });

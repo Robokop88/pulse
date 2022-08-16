@@ -582,34 +582,13 @@
 
     .modal {
         width: 280px;
-        min-height: 70%;
-        padding: 25px 15px 30px 15px;
-        &__subtitle {
-            font-size: 15px;
-        }
-        &__descr { 
-            font-size: 12px;
-            margin-top: 5px;
-        }
+        padding: 25px 15px 25px 15px;
+        min-height: 100px;
+        overflow-y: scroll;
+        height: 95%;
+
         &__close {
-            font-size: 32px;
-            right: -20px;
-            line-height: 16px;
-        }
-        .feed-form {
-            width: 248px;
-            input {
-                height: 30px;
-            }
-            .button {
-                height: 40px;
-                font-size: 15px;
-            }
-        }
-        label.error {
-            font-size: 12px;
-            line-height: 1px;
+            display: none;
         }
     }
-
 }
