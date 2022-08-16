@@ -60,5 +60,47 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('slow');
     });
   });
+  
+  function valideForm(form) {
+    $(form).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+          maxlength: 15
+        },
+        phone: {
+          required: true,
+          maxlength: 18
+        },
+        email: {
+          required: true,
+          maxlength: 30,
+          email: true
+        }
+      },
+      messages: {
+        name: {
+          required: "Пожалуйста, введите свое имя",
+          minlength: jQuery.validator.format("Минимальное количество символов = {0}"),
+          maxlength: jQuery.validator.format("Минимальное количество символов = {0}")
+        },
+        phone: {
+          required: "Пожалуйста, введите свой номер телефона",
+          minlength: jQuery.validator.format("Минимальное количество символов = {0}"),
+          maxlength: jQuery.validator.format("Минимальное количество символов = {0}")
+        },
+        email: {
+          required: "Пожалуста введите сою почту",
+          email: "Неправильно введен адрес почты",
+          maxlength: jQuery.validator.format("Минимальное количество символов = {0}")
+        }
+      }
+    });
+  };
+
+  valideForm("#consultation-form")
+  valideForm("#consultation form")
+  valideForm("#order form")
 
 });

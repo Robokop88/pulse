@@ -571,5 +571,44 @@
                 font-size: 15px;
             }
         }
+        label.error {
+            font-size: 12px;
+            line-height: 1px;
+        }
     }
+}
+
+@media (orientation: landscape) and (max-width: 575px) {
+
+    .modal {
+        width: 280px;
+        padding: 38px 15px 40px 15px;
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr { 
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        &__close {
+            font-size: 32px;
+            right: -20px;
+            line-height: 16px;
+        }
+        .feed-form {
+            width: 248px;
+            input {
+                height: 30px;
+            }
+            .button {
+                height: 40px;
+                font-size: 15px;
+            }
+        }
+        label.error {
+            font-size: 12px;
+            line-height: 1px;
+        }
+    }
+
 }
