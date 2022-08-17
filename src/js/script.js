@@ -109,4 +109,9 @@ $(document).ready(function(){
   let Im = new Inputmask('+7 (999) 999-99-99');
   Im.mask(inputs);
 
+  $(document).on('input[type="text"][maxlength]', function(){
+    if (this.value.length > this.maxLength){
+      this.value = this.value.slice(0, this.maxLength);
+    }
+  });
 });
