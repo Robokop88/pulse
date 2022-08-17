@@ -102,6 +102,6 @@ $(document).ready(function(){
   valideForm("#consultation form");
   valideForm("#order form");
 
-  $('input[name=phone]').mask('+7 ___ ___-__-__');
+  $('input[name=phone]').mask('+7 ');
 
 });
