@@ -103,6 +103,12 @@ $(document).ready(function(){
   valideForm("#consultation form");
   valideForm("#order form");
 
-  $('input[name=phone]').mask('+7 (999) 999-99-99');
+  // $('input[name=phone]').mask('8 (999) 999-99-99');
+
+  let inputs = document.querySelectorAll('input[type="tel"]');
+  let Im = new Inputmask('+7 (999) 999-99-99');
+  Im.mask(inputs);
+
+  
 
 });
