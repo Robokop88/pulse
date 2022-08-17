@@ -88,8 +88,8 @@ $(document).ready(function(){
         },
         phone: {
           required: "Пожалуйста, введите свой номер телефона",
-          minlength: jQuery.validator.format("Минимальное количество символов = {0}"),
-          maxlength: jQuery.validator.format("Максимальное количество символов = {0}")
+          maxlength: jQuery.validator.format("Максимальное количество символов = {0}"),
+          phone: "Введите корректный номер телефона"
         },
         email: {
           required: "Пожалуста введите сою почту",
