@@ -87,7 +87,6 @@ $(document).ready(function(){
         },
         phone: {
           required: "Пожалуйста, введите свой номер телефона",
-          minlength: jQuery.validator.format("Минимальное количество символов = {0}"),
           maxlength: jQuery.validator.format("Максимальное количество символов = {0}")
         },
         email: {
@@ -103,12 +102,11 @@ $(document).ready(function(){
   valideForm("#consultation form");
   valideForm("#order form");
 
+
   // $('input[name=phone]').mask('8 (999) 999-99-99');
 
   let inputs = document.querySelectorAll('input[type="tel"]');
   let Im = new Inputmask('+7 (999) 999-99-99');
   Im.mask(inputs);
-
-  
 
 });
