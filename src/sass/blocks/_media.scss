@@ -580,15 +580,5 @@
 
 @media (orientation: landscape) and (max-width: 575px) {
 
-    .modal {
-        width: 280px;
-        padding: 25px 15px 25px 15px;
-        min-height: 100px;
-        overflow-y: scroll;
-        height: 95%;
-
-        &__close {
-            display: none;
-        }
-    }
+   
 }

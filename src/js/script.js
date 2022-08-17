@@ -50,7 +50,7 @@ $(document).ready(function(){
     $('.overlay, #consultation').fadeIn('slow');
   });
 
-  $('.modal__close, .overlay').on('click', function() {
+  $('.modal__close').on('click', function() {
     $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
   });
 
@@ -67,7 +67,7 @@ $(document).ready(function(){
         name: {
           required: true,
           minlength: 2,
-          maxlength: 15
+          maxlength: 25
         },
         phone: {
           required: true,
@@ -75,7 +75,7 @@ $(document).ready(function(){
         },
         email: {
           required: true,
-          maxlength: 30,
+          maxlength: 40,
           email: true
         }
       },
@@ -99,8 +99,10 @@ $(document).ready(function(){
     });
   };
 
-  valideForm("#consultation-form")
-  valideForm("#consultation form")
-  valideForm("#order form")
+  valideForm("#consultation-form");
+  valideForm("#consultation form");
+  valideForm("#order form");
+
+  $('input[name=phone]').mask('+7 (999) 999-99-99');
 
 });
