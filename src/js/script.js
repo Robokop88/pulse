@@ -71,7 +71,6 @@ $(document).ready(function(){
         },
         phone: {
           required: true,
-          phone: true,
           maxlength: 18
         },
         email: {
@@ -88,8 +87,7 @@ $(document).ready(function(){
         },
         phone: {
           required: "Пожалуйста, введите свой номер телефона",
-          maxlength: jQuery.validator.format("Максимальное количество символов = {0}"),
-          phone: "Введите корректный номер телефона"
+          maxlength: jQuery.validator.format("Максимальное количество символов = {0}")
         },
         email: {
           required: "Пожалуста введите сою почту",
@@ -104,6 +102,6 @@ $(document).ready(function(){
   valideForm("#consultation form");
   valideForm("#order form");
 
-  $('input[name=phone]').mask('+7 ');
+  $('input[name=phone]').mask('+7 ___ ___-__-__');
 
 });
