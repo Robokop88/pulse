@@ -71,6 +71,7 @@ $(document).ready(function(){
         },
         phone: {
           required: true,
+          phone: true,
           maxlength: 18
         },
         email: {
