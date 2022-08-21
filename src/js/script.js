@@ -67,7 +67,7 @@ $(document).ready(function(){
         name: {
           required: true,
           minlength: 2,
-          maxlength: 25
+          maxlength: 30
         },
         phone: {
           required: true,
@@ -109,30 +109,15 @@ $(document).ready(function(){
   let Im = new Inputmask('+7 (999) 999-99-99');
   Im.mask(inputs);
 
-  const maxLength = 30;
+  let maxLength = 30;
 
-  $('input[type="text"]').on('input', function(){
+  $('input[type="text"], input[type="email"]').on('input', function(){
     console.log(this.value.length)
     if (this.value.length > maxLength){
       this.value = this.value.slice(0, maxLength);
     }
   });
 
-  $('form').submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: "mailer/smart.php", 
-      data: $(this)
-    }).done(function() {
-        $(this).find("input").val("");
 
-
-        $("form").trigger("reset");
-
-
-    });
-    return false;
-
-  });
+  
 });
