@@ -109,9 +109,30 @@ $(document).ready(function(){
   let Im = new Inputmask('+7 (999) 999-99-99');
   Im.mask(inputs);
 
-  $('input[type="text"][maxLength]').on('click', function(){
-    if (this.value.length > this.maxLength){
-      this.value = this.value.slice(0, this.maxLength);
+  const maxLength = 30;
+
+  $('input[type="text"]').on('input', function(){
+    console.log(this.value.length)
+    if (this.value.length > maxLength){
+      this.value = this.value.slice(0, maxLength);
     }
+  });
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php", 
+      data: $(this)
+    }).done(function() {
+        $(this).find("input").val("");
+
+
+        $("form").trigger("reset");
+
+
+    });
+    return false;
+
   });
 });
