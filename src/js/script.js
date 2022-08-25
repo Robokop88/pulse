@@ -75,7 +75,7 @@ $(document).ready(function(){
         },
         email: {
           required: true,
-          maxlength: 40,
+          maxlength: 30,
           email: true
         }
       },
@@ -102,14 +102,15 @@ $(document).ready(function(){
   valideForm("#consultation form");
   valideForm("#order form");
 
-
-  // $('input[name=phone]').mask('8 (999) 999-99-99');
+  // mask decoration
 
   let inputs = document.querySelectorAll('input[type="tel"]');
   let Im = new Inputmask('+7 (999) 999-99-99');
   Im.mask(inputs);
 
   let maxLength = 30;
+
+  // limitation
 
   $('input[type="text"], input[type="email"]').on('input', function(){
     console.log(this.value.length)
@@ -118,6 +119,40 @@ $(document).ready(function(){
     }
   });
 
+   // sending
 
+  $('form').submit(function(e) {
+    e.preventDefault();
+    if (!$(this).valid()) {
+      return;
+    }
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php", 
+      data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
+        $('form').trigger('reset');
+    });
+    return false;
+  });
+
+  // Smooth scroll and pageup
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+      $('.pageup').fadeIn('slow');
+    } else {
+      $('.pageup').fadeOut();
+    }
+  });
+  
+  $("a[href=#up]").click(function(){
+    const _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+  });
   
 });
