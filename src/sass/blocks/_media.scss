@@ -576,6 +576,12 @@
             line-height: 1px;
         }
     }
+
+    .pageup {
+        right: 10px;
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (orientation: landscape) and (max-width: 575px) {
