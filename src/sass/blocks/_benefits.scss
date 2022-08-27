@@ -32,6 +32,13 @@
             color: $main-color;
         }
     }
+
+    &__img {
+        &_animation {
+            animation-name: heartbeat;
+            animation-duration: 2s;
+        }
+    }
 }
 
     
