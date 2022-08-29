@@ -33,12 +33,17 @@
         }
     }
 
-    &__img {
-        &_animation {
-            animation-name: heartbeat;
-            animation-duration: 2s;
+    &__icon {
+        &_animations {
+            animation: heartbeat 1.5s ease infinite; 
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
+
+
+    
 }
 
     
