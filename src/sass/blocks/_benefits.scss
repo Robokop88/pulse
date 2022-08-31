@@ -2,7 +2,6 @@
     min-height: 470px;
     padding: 69px 0 78px 0;
     background-color: #f6f6f6;
-
     &__wrapper {
         margin-top: 65px;
         text-align: center;
@@ -10,18 +9,15 @@
         display: flex;
         justify-content: space-between;
     }
-
     &__item {
         width: 240px;
     }
-
     &__subtitle {
         margin-top: 38px;
         font-size: 18px;
         font-weight: 700;
         color: #0d0d0d;
     }
-
     &__text {
         margin-top: 26px;
         text-align: center;
@@ -32,7 +28,6 @@
             color: $main-color;
         }
     }
-
     &__icon {
         &_animations {
             animation: heartbeat 1.5s ease infinite; 
@@ -40,10 +35,7 @@
                 animation-play-state: paused;
             }
         }
-    }
-
-
-    
+    }  
 }
 
     

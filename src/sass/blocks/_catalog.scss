@@ -9,7 +9,6 @@
         margin-bottom: 0;
         padding-left: 0;
     }
-
     &__tab {
         width: 220px;
         height: 50px;
@@ -37,7 +36,6 @@
             border: none;
         }
     }
-    
     &__content {
         margin-top: 60px;
         display: none;
@@ -47,7 +45,6 @@
             display: flex;
         }
     }
-
     &-item {
         overflow: hidden;
         width: 300px;
@@ -91,19 +88,16 @@
                 color: $main-color;
             }  
         }
-
         hr {
             background-color:black;
             margin: 19px 0px;
             border-bottom: none;    
         }
-
         &__footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         &__old-price {
             color: #555555;
             font-size: 14px;
@@ -129,7 +123,6 @@
                 margin-right: 20px;
             }
         }
-
         &__list {
             position: relative;
             width: 50%;
@@ -144,24 +137,28 @@
                 margin-left: 0px;
                 transform: translateX(-100%);
             }
-            li {
-                position: relative;
-                font-size: 14px;
-                font-weight: 300;
-                color: #555555;
-                margin-bottom: 20px;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main-color;
-                    left: -14px;
-                    top: 7px;
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                li {
+                    position: relative;
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: #555555;
+                    margin-bottom: 20px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                        left: -14px;
+                        top: 7px;
+                    }
                 }
-            }
+            } 
         }
-        
         &__back {
             position: absolute;
             bottom: 0;

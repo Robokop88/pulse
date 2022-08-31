@@ -2,14 +2,12 @@
     min-height: 650px;
     padding: 21px 0 93px 0;
     background: url('../img/BG/official.png') center (center/cover) no-repeat;
-
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         margin-top: 90px;
     }
-
     &__header {
         font-size: 42px;
         font-weight: 700;
@@ -17,7 +15,6 @@
         color: #ffffff;
         line-height: 42px;
     }
-
     &__subheader {
         font-size: 24px;
         font-weight: 300;
@@ -26,14 +23,12 @@
         line-height: 24px;
         margin-top: 10px;
     }
-
     &__icons {
         margin-top: 65px;
         width: 425px;
         display: flex;
         justify-content: space-between;
     }
-
     &__icon {
         width: 106px;
         text-align: center;
@@ -46,7 +41,6 @@
             margin-bottom: 20px;
         }
     }
-
     &__link {
         margin-top: 18px;
         font-weight: 500;
@@ -57,7 +51,6 @@
             text-decoration: underline;
             color: #ffffff;
             font-size: 16px;
-
         }
     }
 }
