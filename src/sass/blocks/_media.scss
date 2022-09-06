@@ -1,5 +1,6 @@
 @media (max-width: 991px) {
     .promo {
+        background-position: 20% 0;
         .header {
             display: flex;
             justify-content: space-around;
@@ -35,7 +36,7 @@
     }
     .carousel {
         img {
-            width: 80%;
+            width: 60%;
         }
         .prev, .next {
             display: none;
@@ -69,8 +70,7 @@
                         font-size: 13px;
                         margin-bottom: 12px;
                     }
-                }
-                
+                }  
             }
             &__footer {
                 .catalog-item__price {
