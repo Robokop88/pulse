@@ -1,6 +1,4 @@
-// carusel
-
- const slider = tns({
+const slider = tns({
   container: '.carousel__inner',
   items: 1,
   slideBy: 'page',
@@ -21,8 +19,6 @@ document.querySelector('.next').addEventListener('click', function() {
   slider.goTo('next');
 }); 
 
-// Tabs
-
 $(document).ready(function(){
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
     $(this)
@@ -42,8 +38,6 @@ $(document).ready(function(){
 
   toggleSlide('.catalog-item__link');
   toggleSlide('.catalog-item__back');
-
-  // Modal
    
   $('[data-modal=consultation]').on('click', function() {
     $('.overlay, #consultation').fadeIn('slow');
@@ -59,8 +53,6 @@ $(document).ready(function(){
       $('.overlay, #order').fadeIn('slow');
     });
   });
-  
-  // letter
 
   function valideForm(form) {
     $(form).validate({
@@ -103,15 +95,11 @@ $(document).ready(function(){
   valideForm("#consultation form");
   valideForm("#order form");
 
-  // mask decoration
-
   let inputs = document.querySelectorAll('input[type="tel"]');
   let Im = new Inputmask('+7 (999) 999-99-99');
   Im.mask(inputs);
 
   let maxLength = 30;
-
-  // limitation
 
   $('input[type="text"], input[type="email"]').on('input', function(){
     console.log(this.value.length)
@@ -119,8 +107,6 @@ $(document).ready(function(){
       this.value = this.value.slice(0, maxLength);
     }
   });
-
-   // sending
 
   $('form').submit(function(e) {
     e.preventDefault();
@@ -140,8 +126,6 @@ $(document).ready(function(){
     return false;
   });
 
-  // Smooth scroll and pageup
-
   $(window).scroll(function() {
     if ($(this).scrollTop() > 1600) {
       $('.pageup').fadeIn('slow');
@@ -156,8 +140,6 @@ $(document).ready(function(){
     return false;
   });
 
-  // link catalog 
-
   $("a[href=#catalog]").on("click", function (e) {
     e.preventDefault();
     let id = $(this).attr('href'),
@@ -165,7 +147,5 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top}, 650);  
     return false;    
   });
-
   new WOW().init();
-
 });
